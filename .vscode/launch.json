@@ -62,6 +62,21 @@
       "preLaunchTask": "watch backend (webpack)"
     },
     {
+      "name": "X4 Run Extension",
+      "type": "extensionHost",
+      "request": "launch",
+      "runtimeExecutable": "${execPath}",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/backend",
+        "--extensionDevelopmentPath=${workspaceFolder}/x4-contributor"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/backend/dist/**/*.js",
+        "${workspaceFolder/x4-contributor/out/**/*.js"
+      ],
+      "preLaunchTask": "watch backend (webpack)"
+    },
+    {
       "name": "Test extension",
       "type": "extensionHost",
       "request": "launch",
